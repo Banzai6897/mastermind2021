@@ -1,0 +1,60 @@
+import random
+
+def geraSenha():
+    senha = random.randrange(1000, 10000)
+    return senha
+
+def geraJogada():
+    jogada = int(input("Jogada do usuario (4 digitos):"))
+    if jogada /1000 <= 1:
+        print("ERRO 01: Numero inserido menor que 1000")
+        return
+    else:
+        return jogada
+
+
+def checkEquality(senha, chute):
+    if (senha == chute):
+        print("Usuario acertou o a senha")
+    else:
+        tentativas = 0
+
+        while (senha != chute):
+            tentativas += 1
+
+            if(tentativas == 8):
+                print("O usuario excedeu o numero de tentativas e perdeu o jogo.")
+                quit()
+
+            acertos = 0
+
+            senha = str(senha)
+            chute = str(chute)
+
+            correto = ['X'] * 4
+
+            for i in range(0, 4):
+
+                if(senha[i] == chute[i]):
+                    acertos += 1
+
+                    correto[i] = senha[i]
+                else:
+                    continue
+            if (acertos < 4) and (acertos != 0):
+                print("Numero errado. Quantidade de digitos corretos:", acertos)
+                print("Numeros corretos na tentativa:")
+                for k in correto:
+                    print(k, end = ' ')
+                print("\n\n")
+                chute = int(input("Insira a proxima tentativa: "))
+            elif(acertos == 0):
+                print("Nenhum numero no chute corresponde com a senha")
+                chute = int(input("Entre com a nova tentativa:"))
+        if chute == senha:
+            print("O usuario completou o objetivo do jogo em", tentativas, "tentativas.")
+
+
+
+
+checkEquality(geraSenha(), geraJogada())        
