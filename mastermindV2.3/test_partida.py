@@ -13,8 +13,12 @@ class testPartida(unittest.TestCase):
         self.assertEqual(partida.qtdAlgarismos(senha2), 5)
         self.assertEqual(partida.qtdAlgarismos(senha3), 6)
         
+    def test_nivelJogo(self):
 
-    
+        self.assertEqual(partida.nivelJogo(1), (8,4))
+        self.assertEqual(partida.nivelJogo(2), (10,5))
+        self.assertEqual(partida.nivelJogo(3), (12,6))
+        self.assertEqual(partida.nivelJogo(4), -1)
 
         
         
