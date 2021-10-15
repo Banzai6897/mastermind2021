@@ -19,6 +19,7 @@ class testPartida(unittest.TestCase):
         self.assertEqual(partida.nivelJogo(2), (10,5))
         self.assertEqual(partida.nivelJogo(3), (12,6))
         self.assertEqual(partida.nivelJogo(4), -1)
+        self.assertEqual(partida.nivelJogo(0), -1)
 
         
         
