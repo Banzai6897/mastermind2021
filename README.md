@@ -35,9 +35,11 @@ Para instalar e executar o projeto $mastermind2021 basta seguir os seguintes pas
 
     - fazer o download da pasta mastermind2021V2_3.zip 
 
-    - extrair os arquivos da pasta mastermind2021V2_3.zip para uma pasta na máquina em que o jogo será executado
+    - extrair os arquivos da pasta mastermind2021V2_3.zip para uma 
+      pasta na máquina em que o jogo será executado
 
-    - abrir o a pasta na qual o projeto foi extraído e executar o arquivo main.py através de uma IDE ou através de uma prompt de comando:
+    - abrir a pasta na qual o projeto foi extraído e executar o arquivo 
+      main.py através de uma IDE ou através de uma prompt de comando:
 
       $cd mastermind2021V2_3
 
@@ -45,6 +47,7 @@ Para instalar e executar o projeto $mastermind2021 basta seguir os seguintes pas
       $python main.py --python
                 ou
       $python3 main.py --python3
+     
 ------------
 Versionamento
 ----------
@@ -53,7 +56,12 @@ Versionamento
 ----------
 Apoio e objetivo
 -------
-    Esta é uma atividade proposta pela PUC-Rio (Rio de Janeiro, Brasil) durante o curso da disciplina de Programação Modular (2021.1 - 3WB) sob orientação e supervisão do professor Fl*v*o Be*i*ac*u*, destinada exclusivamente apenas à fins acadêmicos. O projeto está sendo desenvolvido pela equipe de graduandos:
+    Esta é uma atividade proposta pela PUC-Rio (Rio de Janeiro, Brasil) 
+    durante o curso da disciplina de Programação Modular (2021.1 - 3WB),
+    sob orientação e supervisão do professor Fl*v*o Be*i*ac*u*,
+    destinada exclusivamente apenas à fins acadêmicos. 
+    
+    O projeto está sendo desenvolvido pela equipe de graduandos:
 
         - David Wolff Salles de Oliveira
         - João Gabriel Cavalcanti D Nielsen 
