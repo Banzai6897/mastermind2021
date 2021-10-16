@@ -9,11 +9,15 @@ respeitando as regras da versão de tabuleiro e extendendo-se por mais níveis d
 Objetivo do Jogo e como jogar:
 ------------------------------
 
-        7 pinos de cores diferentes e aleatórias (exceto preto e branco), entre estes pinos, ousuário deve optar pelas cores em seus respectivos lugares no tabuleiro para acertar a combinação proposta pelo adversário(computador).
+        7 pinos de cores diferentes e aleatórias (exceto preto e branco), 
+        entre estes pinos, o usuário deve optar pelas cores em seus respectivos lugares 
+        no tabuleiro para acertar a combinação proposta pelo adversário(computador).
 
-        O usuário tem diferentes quantidades de chances para acertar a senha proposta pelo adversário, sendo 8 tentativas para o nível  1, 10 tentativas para o nível 2 e 12 tentativas para o nível 3. 
+        O usuário tem diferentes quantidades de chances para acertar a senha proposta pelo adversário, 
+        sendo 8 tentativas para o nível  1, 10 tentativas para o nível 2 e 12 tentativas para o nível 3. 
 
-        Quando o usuário recebe o feedback de sua jogada, a seguinte interpretação deve ser considerada para realizar a próxima jogada: 
+        Quando o usuário recebe o feedback de sua jogada, a seguinte interpretação deve ser considerada 
+        para realizar a próxima jogada: 
 
             - "X" nas casas em que o dígito escolhido pelo usuário na última jogada não está presente na senha atual.
 
@@ -24,7 +28,8 @@ Objetivo do Jogo e como jogar:
 Funcionalidades
 --------
 
-- O jogo pode ser iniciado em 3 dificuldades, representando a senha em 4, 5 ou 6 dígitos (cores) respectivamente.  
+- O jogo pode ser iniciado em 3 dificuldades, 
+representando a senha em 4, 5 ou 6 dígitos (cores) respectivamente.  
 
 - A estrutura do código é responsiva quanto à entradas incompatíveis do usuário. 
 --------
