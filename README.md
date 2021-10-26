@@ -46,21 +46,24 @@ Funcionalidades
 representando a senha em 4, 5 ou 6 dígitos (cores) respectivamente.  
 
 - A estrutura do código é responsiva quanto à entradas incompatíveis do usuário. 
+
+- Dados das partidas são enviados ao banco de dados local, especificamente: o nível escolhido, nome do jogador, numero de tentativas e seu resultado. 
+
 --------
 Instalação
 ------------
 
 Para instalar e executar o projeto $mastermind2021 basta seguir os seguintes passos:
 
-    - fazer o download da pasta mastermind2021V2_3.zip 
+    - fazer o download da pasta mastermind2021V2_5.zip 
 
-    - extrair os arquivos da pasta mastermind2021V2_3.zip para uma 
+    - extrair os arquivos da pasta mastermind2021V2_5.zip para uma 
       pasta na máquina em que o jogo será executado
 
     - abrir a pasta na qual o projeto foi extraído e executar o arquivo 
       main.py através de uma IDE ou através de uma prompt de comando:
 
-      $cd mastermind2021V2_3
+      $cd mastermind2021V2_5
 
 
       $python main.py --python
