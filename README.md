@@ -1,7 +1,7 @@
 mastermind 2021
 ========
 
-$**mastermind2021** é um jogo de computador desenvolvido em **python**, baseado no jogo de tabuleiro "Senha",
+$**mastermindv2_6** é um jogo de computador desenvolvido em **python**, baseado no jogo de tabuleiro "Senha",
 respeitando as regras da versão de tabuleiro e extendendo-se por mais níveis de dificuldade.
 --------
 --------
@@ -25,6 +25,8 @@ Objetivo do Jogo e como jogar:
 Módulos e Bibliotecas
 -------
 - **main.py** -> Módulo de acesso que controla a execução da aplicação e contém as chamadas das funções que iniciam e/ou finalizam a partida. 
+
+- **connection.py** -> Módulo que contém a conexão e comunicação entre o módulo principal e o banco de dados mySql criado pelo programa no servidor local. Este funciona de maneira que a cada partida, o programa armazena informações (nome do jogador, quantidade de tentativas e resultado final) em tabelas referentes aos diferentes níveis de dificuldade em seu banco de dados reservado "partidasMastermind2_6". O programa busca pela pela existência deste mesmo banco de dados no servidor local, caso exista, as informações são armazenadas no mesmo, caso não exista, um banco de dados "partidasMastermind2_6" é criado após a partida armazenando os dados do primeiro usuário em diante.
 
 - **partida.py** -> Módulo que contém a definição das funções que controlam o funcionamento das partidas. Recebe informações do usuário para obter o nível de dificuldade. 
 
@@ -55,20 +57,24 @@ Instalação
 
 Para instalar e executar o projeto $mastermind2021 basta seguir os seguintes passos:
 
-    - fazer o download da pasta mastermind2021V2_5.zip 
+    - fazer o download da pasta mastermind2021V2_6 ($git clone path/pc/example https://github.com/david-wolff/mastermind2021.git) 
 
-    - extrair os arquivos da pasta mastermind2021V2_5.zip para uma 
-      pasta na máquina em que o jogo será executado
+    - extrair os arquivos da pasta mastermind2021V2_6 para uma 
+      pasta na máquina em que o jogo será executado.
 
     - abrir a pasta na qual o projeto foi extraído e executar o arquivo 
       main.py através de uma IDE ou através de uma prompt de comando:
 
-      $cd mastermind2021V2_5
+                $cd mastermind2021V2_6
 
 
-      $python main.py --python
-                ou
-      $python3 main.py --python3
+                $python main.py --python
+      
+                         ou
+                
+                $python3 main.py --python3
+    
+    - Instalar o SGBD mySql e logar com user (root) e senha no servidor local da máquina host. Documentação mySql https://dev.mysql.com/doc/mysql-getting-started/en/
      
 ------------
 Versionamento
@@ -78,10 +84,12 @@ Versionamento
 ----------
 Apoio e objetivo
 -------
-    Esta é uma atividade proposta pela PUC-Rio (Rio de Janeiro, Brasil) 
-    durante o curso da disciplina de Programação Modular (2021.1 - 3WB),
-    sob orientação e supervisão do professor Fl*v*o Be*i*ac*u*,
-    destinada exclusivamente apenas à fins acadêmicos. 
+    Esta é uma atividade proposta pela PUC-Rio (Rio de Janeiro, Brasil)
+    durante o curso da disciplina de Programação Modular (2021.2 - 3WB -
+    Prof. Flavio Bevilacqua),
+    com tema escolhido pela própria turma, destinada exclusivamente à
+    fins acadêmicos.
+
     
     O projeto está sendo desenvolvido pela equipe de graduandos:
 
