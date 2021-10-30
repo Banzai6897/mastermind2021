@@ -68,11 +68,11 @@ Para instalar e executar o projeto $mastermind2021 basta seguir os seguintes pas
                 $cd mastermind2021V2_6
 
 
-                $python main.py --python
+                $python main.py 
       
                          ou
                 
-                $python3 main.py --python3
+                $python3 main.py 
     
     - Instalar o SGBD mySql e logar com user (root) e senha no servidor local da máquina host. Documentação mySql https://dev.mysql.com/doc/mysql-getting-started/en/
      
