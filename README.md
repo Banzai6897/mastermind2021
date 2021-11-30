@@ -1,7 +1,7 @@
-mastermind 2021
+Mastermind 2021 - Documentação Escrita por David Wolff
 ========
 
-$**mastermindv2_6** é um jogo de computador desenvolvido em **python**, baseado no jogo de tabuleiro "Senha",
+$**mastermindv2_6** é um jogo de computador desenvolvido em **python**, baseado no jogo de tabuleiro "Megasenha",
 respeitando as regras da versão de tabuleiro e extendendo-se por mais níveis de dificuldade.
 --------
 --------
@@ -9,9 +9,7 @@ respeitando as regras da versão de tabuleiro e extendendo-se por mais níveis d
 Objetivo do Jogo e como jogar:
 ------------------------------
 
-        7 pinos de cores diferentes e aleatórias (exceto preto e branco), entre estes pinos, o usuário deve optar pelas cores em seus respectivos lugares no tabuleiro para acertar a combinação proposta pelo adversário(computador).
-
-        O usuário tem diferentes quantidades de chances para acertar a senha proposta pelo adversário, sendo 8 tentativas para o nível  1, 10 tentativas para o nível 2 e 12 tentativas para o nível 3. 
+        O adversário (cpu) escolhe uma senha entre 4 e 6 dígitos (dependendo do nível de dificuldade selecionado) no intervalo de 1 a 7, aleatórios, podendo ou não se repetir ao longo da senha. O usuário deve tentar acertar a combinação proposta, respeitando o limite de 8 a 12 tentativas (dependendo do nível de dificuldade selecionado).
 
         Quando o usuário recebe o feedback de sua jogada, a seguinte interpretação deve ser considerada para realizar a próxima jogada: 
 
@@ -51,6 +49,7 @@ representando a senha em 4, 5 ou 6 dígitos (cores) respectivamente.
 
 - Dados das partidas são enviados ao banco de dados local, especificamente: o nível escolhido, nome do jogador, numero de tentativas e seu resultado. 
 
+- Um arquivo .xml é gerado após a execução do programa, contendo os dados referentes às partidas, armazenados neste arquivo de acordo com o nível selecionado na última partida.
 --------
 Instalação
 ------------
@@ -74,13 +73,13 @@ Para instalar e executar o projeto $mastermind2021 basta seguir os seguintes pas
                 
                 $python3 main.py 
     
-    - Instalar o SGBD mySql e logar com user (root) e senha no servidor local da máquina host. Documentação mySql https://dev.mysql.com/doc/mysql-getting-started/en/
+    - Instalar o SGBD mySql e logar com user (root) e senha (root) servidor local da máquina host. Documentação mySql https://dev.mysql.com/doc/mysql-getting-started/en/
      
 ------------
 Versionamento
 ----------
 
-- Página contendo as versões do código-fonte e os recursos do projeto: https://github.com/Banzai6897/mastermind2021.git
+- Página contendo as versões do código-fonte e os recursos do projeto: https://github.com/david-wolff/mastermind2021.git
 ----------
 Apoio e objetivo
 -------
